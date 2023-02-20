@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.citelligence.ciudaddeartistas"
+        minSdkVersion 28
+        targetSdkVersion 33
+        versionCode 5
+        versionName "1.04"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.citelligence.ciudaddeartistas'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.3'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    //def glide_version = "4.12.0"
+    //implementation "com.github.bumptech.glide:glide:$glide_version"
+    //kapt "com.github.bumptech.glide:compiler:$glide_version"
+    //implementation ("com.github.bumptech.glide:glide:4.8.0") {exclude group: "com.android.support"}
+    //kapt 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation "androidx.fragment:fragment-ktx:1.5.5"
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation ('com.github.bumptech.glide:glide:4.14.2') {exclude group: "com.android.support"}
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
+    kapt 'com.github.bumptech.glide:annotations:4.14.2'
+
+    //implementation platform('com.google.firebase:firebase-bom:26.1.0')
+    //implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0'
+
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "889575171843",
+    "project_id": "ciudad-de-artistas",
+    "storage_bucket": "ciudad-de-artistas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889575171843:android:7c172db2d2e300a9d7ab36",
+        "android_client_info": {
+          "package_name": "com.citelligence.ciudaddeartistas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889575171843-e8338t2l3qcp12ipmj40b6g8f7tn1s4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.citelligence.ciudaddeartistas",
+            "certificate_hash": "df0e92b302e964b82af5a61aca0aa0be183d4cea"
+          }
+        },
+        {
+          "client_id": "889575171843-qu1pq3mevaesb0eqmomhdnnjp70d2e3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX08DW_nMpq7VZfipL7SMMu61Laf5SN1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889575171843-qu1pq3mevaesb0eqmomhdnnjp70d2e3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

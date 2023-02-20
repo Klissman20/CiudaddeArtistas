@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ly_rounded"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:id="@+id/shop_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ly_rounded"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/shop_item_image"
+        app:layout_constraintBottom_toTopOf="@id/redes"
+        tools:layout_editor_absoluteX="7dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/shop_item_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="@string/nombreProyecto"
+            android:textColor="@color/blue_app"
+            android:textSize="20sp"
+            android:fontFamily="@font/lato_bold"
+            android:textStyle="bold"
+            android:textFontWeight="900"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/shop_item_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="3"
+            android:text="@string/descripcion"
+            android:textColor="@color/desc"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato_regular" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/redes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:text="@string/redes"
+        android:textColor="@color/blue_app"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/ly_2"
+        android:fontFamily="@font/lato_regular"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/ly_2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FB"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            app:fabCustomSize="35dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_facebook"
+            app:maxImageSize="35dp"
+            android:tint="@color/blue_app" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/WHS"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_whatsapp"
+            android:backgroundTint="@color/white"
+            app:maxImageSize="30dp"
+            app:fabCustomSize="35dp"
+            android:scaleType="centerCrop"
+            android:tint="@color/blue_app" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/IN"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_intagram"
+            android:backgroundTint="@color/white"
+            app:fabCustomSize="35dp"
+            app:maxImageSize="27dp"
+            android:tint="@color/blue_app" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/YT"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_youtube"
+            android:backgroundTint="@color/white"
+            app:fabCustomSize="35dp"
+            app:maxImageSize="35dp"
+            android:tint="@color/blue_app" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
