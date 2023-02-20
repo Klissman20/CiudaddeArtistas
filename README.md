@@ -4,7 +4,6 @@ Presentamos la última aplicación móvil artística que cambiará su forma de c
 
 Con esta aplicación, puedes crear fácilmente un perfil que muestre tu trabajo y destaque tu estilo único. Puedes subir fotos, vídeos y otros contenidos para mostrar tus creaciones y atraer a nuevos clientes. Además, la aplicación ofrece una plataforma para que los clientes se pongan en contacto contigo directamente y soliciten tus servicios.
 
-Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 https://play.google.com/store/apps/
 details?id=com.citelligence.ciudadde
-artistas&hl=es_CO&gl=US![image](https://user-images.githubusercontent.com/20672796/220213898-a7b1d854-770e-4838-bc9b-0147ed4118c5.png)
+artistas&hl=es_CO&gl=US
